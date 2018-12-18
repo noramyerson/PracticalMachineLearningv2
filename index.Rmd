@@ -96,7 +96,7 @@ postResample(pred = pred_GBM, obs =inTestClean$classe)
 1-as.numeric(confusionMatrix(inTestClean$classe, pred_GBM)$overall[1])
 
 ```
-Because accuracy was highest (99%) in our random forest model and therefore the out of sample error was the lowest at 0.68%. We will choose this as our final model to predict on the test set.  
+Because accuracy was highest (99%) in our random forest model and therefore the out of sample error was the lowest at 0.68%. We will choose this as our final model to predict on the test set.   
 
 ##Predict classes for the original set of Test data
 ```{r eval = TRUE, echo = TRUE}
